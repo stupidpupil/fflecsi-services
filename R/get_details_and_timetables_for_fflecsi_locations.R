@@ -1,4 +1,4 @@
-get_details_for_fflecsi_locations <- function(){
+get_details_and_timetables_for_fflecsi_locations <- function(){
   urls <- get_all_fflecsi_location_urls()
 
   timetables <- tibble::tibble()
@@ -6,7 +6,7 @@ get_details_for_fflecsi_locations <- function(){
 
   for (url in urls) {
 
-    d <- get_details_for_fflecsi_location_url(url)
+    d <- get_details_and_timetable_for_fflecsi_location_url(url)
 
     timetables <- timetables |> bind_rows(d$timetables)
     details <- details |> bind_rows(d$details)

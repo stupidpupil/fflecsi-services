@@ -1,4 +1,4 @@
-get_details_for_fflecsi_location_url <- function(fflecsi_location_url){
+get_details_and_timetable_for_fflecsi_location_url <- function(fflecsi_location_url){
 
   fflecsi_location_html <- rvest::read_html(fflecsi_location_url)
 
