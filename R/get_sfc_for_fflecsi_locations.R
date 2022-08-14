@@ -10,7 +10,7 @@ get_sfc_for_fflecsi_locations <- function(){
     dplyr::left_join(details_and_timetables$details, by=c("tabpanel_id", "location_slug")) |>
     dplyr::left_join(osm_style_hours, by=c("tabpanel_id", "location_slug")) |>
     dplyr::mutate(
-      url = paste0("https://www.fflecsi.wales/", location_slug, "/")
+      url = paste0("https://www.fflecsi.wales/locations/", location_slug, "/")
     ) |>
     dplyr::rename(
       service_hours = OpeningHoursOSM
