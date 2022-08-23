@@ -21,14 +21,18 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 
 	calendar <- timetables |>
 		select(service_id, monday, tuesday, wednesday, thursday, friday, saturday, sunday) |>
-		mutate(start_date = lubridate::today(), end_date = start_date + lubridate::weeks(4))
+		mutate(start_date = lubridate::today(), end_date = start_date + lubridate::weeks(4)) |>
+		mutate(start_date = start_date |> strftime("%Y%m%d"), end_date = end_date |> strftime("%Y%m%d"))
 
 	trips <- timetables	 |>
 		select(route_id, service_id, trip_id)
 
 	routes <- timetables |>
 		select(route_id) |>
-		mutate(route_short_name = route_id) # HACK
+		mutate(
+			route_short_name = route_id, # HACK
+			route_type = 715 # "Demand and Response Bus Service"
+		) |> distinct()
 
 	stop_times <- timetables |>
 		select(trip_id, stop_id, start_pickup_dropoff_window, end_pickup_dropoff_window) |>
