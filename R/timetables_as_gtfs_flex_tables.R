@@ -8,8 +8,11 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 		mutate(Times = Times |> stringr::str_trim()) |>
     	filter(stringr::str_detect(Times, timespan_regex)) |>
 		distinct() |> 
-		mutate(active=1L, DayOfWeekName = stringr::str_to_lower(DayOfWeekName)) |> 
-		pivot_wider(names_from=DayOfWeekName,values_from=active, values_fill=0L) |>
+		mutate(active=1L, DayOfWeekName = 
+			stringr::str_to_lower(DayOfWeekName) |> 
+			factor(levels=c("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"))
+		) |> 
+		pivot_wider(names_from=DayOfWeekName, names_expand=TRUE, values_from=active, values_fill=0L) |>
 		mutate(stop_id = paste(location_slug, tabpanel_id, sep="_"), route_id = stop_id ) |>
 		mutate(
 			start_pickup_dropoff_window = Times |> stringr::str_replace_all(timespan_regex, "\\1:00"),
