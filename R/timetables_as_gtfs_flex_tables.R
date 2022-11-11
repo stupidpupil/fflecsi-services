@@ -34,6 +34,8 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 			route_type = 715 # "Demand and Response Bus Service"
 		) |> distinct()
 
+	# TODO: Consider duplicating stop_times, despite
+	# https://github.com/opentripplanner/OpenTripPlanner/pull/3720
 	stop_times <- timetables |>
 		select(trip_id, stop_id, start_pickup_dropoff_window, end_pickup_dropoff_window) |>
 		mutate(
