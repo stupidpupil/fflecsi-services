@@ -14,7 +14,7 @@ get_details_for_script_element <- function(script_element){
   }
 
   results[[1]] |> 
-    tibble::as_tibble(.name_repair) |> 
-    dplyr::rename(map_id=V3, kml_url =V2) |> 
-    dplyr::select(-V1)
+    tibble::as_tibble(.name_repair = "unique") |> 
+    dplyr::rename(map_id = `...3`, kml_url = `...2`) |> 
+    dplyr::select(-`...1`)
 }
