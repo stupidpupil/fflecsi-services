@@ -19,6 +19,8 @@ geometry_for_details <- function(details){
 
 	geom_temp |> 
 		group_by(tabpanel_id, location_slug) |>
-		summarise()
+		summarise() |>
+		ungroup() |> 
+		mutate(stop_id = paste(location_slug, tabpanel_id, sep="_"))
 
 }
