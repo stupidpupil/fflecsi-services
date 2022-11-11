@@ -47,5 +47,14 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 			stop_sequence = 1
 		)
 
-	return(list(calendar=calendar, trips=trips, routes=routes, stop_times=stop_times))
+	agency <- tibble::tibble(
+		agency_name = "fflecsi",
+		agency_url = "https://www.fflecsi.wales/",
+		agency_timezone = "Europe/London"
+	)
+
+	stops <- tibble::tibble()
+	location_groups <- tibble::tibble()
+
+	return(list(calendar=calendar, trips=trips, routes=routes, stop_times=stop_times, agency=agency, stops=stops, location_groups=location_groups))
 }
