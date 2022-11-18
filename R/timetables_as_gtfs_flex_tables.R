@@ -37,8 +37,6 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 			route_type = 715 # "Demand and Response Bus Service"
 		) |> distinct()
 
-	# TODO: Consider duplicating stop_times, despite
-	# https://github.com/opentripplanner/OpenTripPlanner/pull/3720
 	stop_times <- timetables |>
 		select(trip_id, stop_id, start_pickup_dropoff_window, end_pickup_dropoff_window) |>
 		mutate(
@@ -46,6 +44,12 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 			drop_off_type = 2,
 			stop_sequence = 1
 		)
+
+	# Duplicate stop_times, despite
+	# https://github.com/opentripplanner/OpenTripPlanner/pull/3720
+
+	stop_times <- stop_times |> 
+		bind_rows(stop_times |> mutate(stop_sequence = stop_sequence + 1))
 
 	agency <- tibble::tibble(
 		agency_name = "fflecsi",
