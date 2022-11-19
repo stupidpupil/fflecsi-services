@@ -1,0 +1,15 @@
+route_id,route_short_name,route_type
+conwy-valley_1,conwy-valley_1,715
+conwy-valley_2,conwy-valley_2,715
+pembrokeshire_1,pembrokeshire_1,715
+pembrokeshire_2,pembrokeshire_2,715
+rhondda-152_1,rhondda-152_1,715
+prestatyn-40_1,prestatyn-40_1,715
+denbigh-66_1,denbigh-66_1,715
+blaenau-gwent_1,blaenau-gwent_1,715
+blaenau-gwent_2,blaenau-gwent_2,715
+flintshire_1,flintshire_1,715
+fflecsi-bwcabus_1,fflecsi-bwcabus_1,715
+fflecsi-bwcabus_2,fflecsi-bwcabus_2,715
+buckley_1,buckley_1,715
+ruthin_1,ruthin_1,715
