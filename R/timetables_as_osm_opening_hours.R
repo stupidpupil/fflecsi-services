@@ -12,7 +12,7 @@ timetables_as_osm_opening_hours <- function(timetables) {
 
   timespan_regex <- "^(\\d{2}:\\d{2})\\s+-\\s+(\\d{2}:\\d{2})$"
 
-  # TODO - Public Holidays
+  # Assume all fflecsi services are disabled on bank holidays
 
   timetables |> 
     distinct() |>
@@ -36,5 +36,5 @@ timetables_as_osm_opening_hours <- function(timetables) {
     summarise(TimesOSM = paste0(Times, collapse=",")) |>
     mutate(DayPlusTime = paste(DayOfWeekOSM, TimesOSM, sep=" ")) |>
     group_by(tabpanel_id, location_slug) |>
-    summarise(OpeningHoursOSM = paste0(DayPlusTime, collapse="; "))
+    summarise(OpeningHoursOSM = paste0(DayPlusTime, "; PH off", collapse="; "))
 }

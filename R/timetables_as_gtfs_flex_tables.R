@@ -2,7 +2,6 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 
 	timespan_regex <- "^(\\d{2}:\\d{2})\\s+-\\s+(\\d{2}:\\d{2})$"
 
-
 	timetables <- timetables |> 
 		separate_rows(Times, sep="[\n]+") |>
 		mutate(Times = Times |> stringr::str_trim()) |>
@@ -24,8 +23,21 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 
 	calendar <- timetables |>
 		select(service_id, monday, tuesday, wednesday, thursday, friday, saturday, sunday) |>
-		mutate(start_date = lubridate::today(), end_date = start_date + lubridate::weeks(4)) |>
+		mutate(start_date = lubridate::today(), end_date = start_date + lubridate::weeks(4))
+
+	# Assume all fflecsi services are disabled on bank holidays
+	calendar_dates <- get_bank_holidays() |>
+		 rename(`date` = 2) |> select(date) |>
+		 filter(date >= calendar$start_date, date <= calendar$end_date) |>
+		 mutate(exception_type = 2) |>
+		 full_join(calendar |> select(service_id) |> distinct(), by=character())
+
+	calendar <- calendar |>
 		mutate(start_date = start_date |> strftime("%Y%m%d"), end_date = end_date |> strftime("%Y%m%d"))
+
+	calendar_dates <- calendar_dates |>
+		mutate(date = date |> strftime("%Y%m%d"))
+
 
 	trips <- timetables	 |>
 		select(route_id, service_id, trip_id)
@@ -60,5 +72,8 @@ timetables_as_gtfs_flex_tables <- function(timetables){
 	stops <- tibble::tibble()
 	location_groups <- tibble::tibble()
 
-	return(list(calendar=calendar, trips=trips, routes=routes, stop_times=stop_times, agency=agency, stops=stops, location_groups=location_groups))
+	return(list(
+		calendar=calendar, calendar_dates=calendar_dates,
+		trips=trips, routes=routes, stop_times=stop_times, 
+		agency=agency, stops=stops, location_groups=location_groups))
 }
