@@ -14,4 +14,5 @@ Depends:
   checkmate
 Imports:
   rvest,
-  gtfstools
+  gtfstools,
+  calendar
