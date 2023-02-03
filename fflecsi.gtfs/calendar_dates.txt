@@ -5,8 +5,11 @@ NA,NA,pembrokeshire_1_1
 NA,NA,pembrokeshire_1_2
 NA,NA,pembrokeshire_2_1
 NA,NA,pembrokeshire_2_2
+NA,NA,pembrokeshire_3_1
+NA,NA,pembrokeshire_3_2
 NA,NA,rhondda-152_1_1
 NA,NA,rhondda-152_1_2
+NA,NA,rhondda-152_1_3
 NA,NA,prestatyn-40_1_1
 NA,NA,denbigh-66_1_1
 NA,NA,denbigh-66_1_2

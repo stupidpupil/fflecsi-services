@@ -3,6 +3,7 @@ conwy-valley_1,conwy-valley_1,715
 conwy-valley_2,conwy-valley_2,715
 pembrokeshire_1,pembrokeshire_1,715
 pembrokeshire_2,pembrokeshire_2,715
+pembrokeshire_3,pembrokeshire_3,715
 rhondda-152_1,rhondda-152_1,715
 prestatyn-40_1,prestatyn-40_1,715
 denbigh-66_1,denbigh-66_1,715

@@ -5,8 +5,11 @@ pembrokeshire_1,pembrokeshire_1_1,pembrokeshire_1_1
 pembrokeshire_1,pembrokeshire_1_2,pembrokeshire_1_2
 pembrokeshire_2,pembrokeshire_2_1,pembrokeshire_2_1
 pembrokeshire_2,pembrokeshire_2_2,pembrokeshire_2_2
+pembrokeshire_3,pembrokeshire_3_1,pembrokeshire_3_1
+pembrokeshire_3,pembrokeshire_3_2,pembrokeshire_3_2
 rhondda-152_1,rhondda-152_1_1,rhondda-152_1_1
 rhondda-152_1,rhondda-152_1_2,rhondda-152_1_2
+rhondda-152_1,rhondda-152_1_3,rhondda-152_1_3
 prestatyn-40_1,prestatyn-40_1_1,prestatyn-40_1_1
 denbigh-66_1,denbigh-66_1_1,denbigh-66_1_1
 denbigh-66_1,denbigh-66_1_2,denbigh-66_1_2
