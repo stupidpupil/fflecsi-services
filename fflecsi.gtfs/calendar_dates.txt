@@ -9,6 +9,7 @@ date,exception_type,service_id
 20230407,2,conwy-valley_2_1
 20230407,2,denbigh-66_1_1
 20230407,2,denbigh-66_1_2
+20230407,2,denbigh-66_1_3
 20230407,2,fflecsi-bwcabus_1_1
 20230407,2,fflecsi-bwcabus_2_1
 20230407,2,fflecsi-bwcabus_2_2
@@ -37,6 +38,7 @@ date,exception_type,service_id
 20230410,2,conwy-valley_2_1
 20230410,2,denbigh-66_1_1
 20230410,2,denbigh-66_1_2
+20230410,2,denbigh-66_1_3
 20230410,2,fflecsi-bwcabus_1_1
 20230410,2,fflecsi-bwcabus_2_1
 20230410,2,fflecsi-bwcabus_2_2
