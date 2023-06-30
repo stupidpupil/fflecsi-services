@@ -1,8 +1,8 @@
 date,exception_type,service_id
 NA,NA,blaenau-gwent_1_1
+NA,NA,blaenau-gwent_1_2
 NA,NA,blaenau-gwent_2_1
 NA,NA,blaenau-gwent_2_2
-NA,NA,blaenau-gwent_2_3
 NA,NA,buckley_1_1
 NA,NA,buckley_1_2
 NA,NA,conwy-valley_1_1

@@ -1,8 +1,8 @@
 trip_id,stop_id,start_pickup_dropoff_window,end_pickup_dropoff_window,pickup_type,drop_off_type,stop_sequence
-blaenau-gwent_1_1,blaenau-gwent_1,05:30:00,22:35:00,2,2,1
-blaenau-gwent_2_1,blaenau-gwent_2,05:30:00,08:00:00,2,2,1
-blaenau-gwent_2_2,blaenau-gwent_2,13:15:00,14:15:00,2,2,1
-blaenau-gwent_2_3,blaenau-gwent_2,18:30:00,22:35:00,2,2,1
+blaenau-gwent_1_1,blaenau-gwent_1,05:30:00,09:15:00,2,2,1
+blaenau-gwent_1_2,blaenau-gwent_1,17:45:00,23:00:00,2,2,1
+blaenau-gwent_2_1,blaenau-gwent_2,05:30:00,09:15:00,2,2,1
+blaenau-gwent_2_2,blaenau-gwent_2,17:45:00,23:00:00,2,2,1
 buckley_1_1,buckley_1,09:15:00,18:30:00,2,2,1
 buckley_1_2,buckley_1,07:45:00,18:30:00,2,2,1
 conwy-valley_1_1,conwy-valley_1,06:30:00,19:00:00,2,2,1
@@ -28,10 +28,10 @@ rhondda-152_1_1,rhondda-152_1,08:00:00,12:15:00,2,2,1
 rhondda-152_1_2,rhondda-152_1,13:00:00,17:15:00,2,2,1
 rhondda-152_1_3,rhondda-152_1,19:00:00,23:30:00,2,2,1
 ruthin_1_1,ruthin_1,09:30:00,14:30:00,2,2,1
-blaenau-gwent_1_1,blaenau-gwent_1,05:30:00,22:35:00,2,2,2
-blaenau-gwent_2_1,blaenau-gwent_2,05:30:00,08:00:00,2,2,2
-blaenau-gwent_2_2,blaenau-gwent_2,13:15:00,14:15:00,2,2,2
-blaenau-gwent_2_3,blaenau-gwent_2,18:30:00,22:35:00,2,2,2
+blaenau-gwent_1_1,blaenau-gwent_1,05:30:00,09:15:00,2,2,2
+blaenau-gwent_1_2,blaenau-gwent_1,17:45:00,23:00:00,2,2,2
+blaenau-gwent_2_1,blaenau-gwent_2,05:30:00,09:15:00,2,2,2
+blaenau-gwent_2_2,blaenau-gwent_2,17:45:00,23:00:00,2,2,2
 buckley_1_1,buckley_1,09:15:00,18:30:00,2,2,2
 buckley_1_2,buckley_1,07:45:00,18:30:00,2,2,2
 conwy-valley_1_1,conwy-valley_1,06:30:00,19:00:00,2,2,2

@@ -1,8 +1,8 @@
 route_id,service_id,trip_id
 blaenau-gwent_1,blaenau-gwent_1_1,blaenau-gwent_1_1
+blaenau-gwent_1,blaenau-gwent_1_2,blaenau-gwent_1_2
 blaenau-gwent_2,blaenau-gwent_2_1,blaenau-gwent_2_1
 blaenau-gwent_2,blaenau-gwent_2_2,blaenau-gwent_2_2
-blaenau-gwent_2,blaenau-gwent_2_3,blaenau-gwent_2_3
 buckley_1,buckley_1_1,buckley_1_1
 buckley_1,buckley_1_2,buckley_1_2
 conwy-valley_1,conwy-valley_1_1,conwy-valley_1_1
