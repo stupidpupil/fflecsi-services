@@ -5,6 +5,7 @@ buckley_1,buckley_1,715
 conwy-valley_1,conwy-valley_1,715
 conwy-valley_2,conwy-valley_2,715
 denbigh-66_1,denbigh-66_1,715
+denbigh-66_2,denbigh-66_2,715
 fflecsi-bwcabus_1,fflecsi-bwcabus_1,715
 fflecsi-bwcabus_2,fflecsi-bwcabus_2,715
 flintshire_1,flintshire_1,715
