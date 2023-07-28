@@ -13,7 +13,6 @@ NA,NA,denbigh-66_1_3
 NA,NA,denbigh-66_2_1
 NA,NA,fflecsi-bwcabus_1_1
 NA,NA,fflecsi-bwcabus_2_1
-NA,NA,fflecsi-bwcabus_2_2
 NA,NA,flintshire_1_1
 NA,NA,flintshire_1_2
 NA,NA,flintshire_1_3
@@ -21,9 +20,8 @@ NA,NA,llyn-peninsula_1_1
 NA,NA,pembrokeshire_1_1
 NA,NA,pembrokeshire_1_2
 NA,NA,pembrokeshire_2_1
-NA,NA,pembrokeshire_2_2
 NA,NA,pembrokeshire_3_1
-NA,NA,pembrokeshire_3_2
+NA,NA,pembrokeshire_4_1
 NA,NA,prestatyn-40_1_1
 NA,NA,rhondda-152_1_1
 NA,NA,rhondda-152_1_2
