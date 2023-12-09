@@ -11,8 +11,6 @@ denbigh-66_1_1,denbigh-66_1,09:00:00,12:00:00,2,2,1
 denbigh-66_1_2,denbigh-66_1,12:45:00,15:15:00,2,2,1
 denbigh-66_1_3,denbigh-66_1,16:30:00,18:00:00,2,2,1
 denbigh-66_2_1,denbigh-66_2,09:30:00,14:30:00,2,2,1
-fflecsi-bwcabus_1_1,fflecsi-bwcabus_1,07:00:00,19:00:00,2,2,1
-fflecsi-bwcabus_2_1,fflecsi-bwcabus_2,07:30:00,18:30:00,2,2,1
 flintshire_1_1,flintshire_1,09:15:00,15:15:00,2,2,1
 flintshire_1_2,flintshire_1,16:15:00,18:00:00,2,2,1
 flintshire_1_3,flintshire_1,16:15:00,13:00:00,2,2,1
@@ -39,8 +37,6 @@ denbigh-66_1_1,denbigh-66_1,09:00:00,12:00:00,2,2,2
 denbigh-66_1_2,denbigh-66_1,12:45:00,15:15:00,2,2,2
 denbigh-66_1_3,denbigh-66_1,16:30:00,18:00:00,2,2,2
 denbigh-66_2_1,denbigh-66_2,09:30:00,14:30:00,2,2,2
-fflecsi-bwcabus_1_1,fflecsi-bwcabus_1,07:00:00,19:00:00,2,2,2
-fflecsi-bwcabus_2_1,fflecsi-bwcabus_2,07:30:00,18:30:00,2,2,2
 flintshire_1_1,flintshire_1,09:15:00,15:15:00,2,2,2
 flintshire_1_2,flintshire_1,16:15:00,18:00:00,2,2,2
 flintshire_1_3,flintshire_1,16:15:00,13:00:00,2,2,2
